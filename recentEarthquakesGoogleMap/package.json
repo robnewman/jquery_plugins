@@ -1,0 +1,41 @@
+{
+    "name": "jquery.recentEarthquakesGoogleMap",
+    "version": "1.0",
+    "title": "jQuery.recentEarthquakesGoogleMap()",
+    "author": {
+        "name": "Rob Newman",
+        "url": "https://github.com/robnewman"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "MIT-LICENSE.txt"
+        },
+        {
+            "type": "GPLv2",
+            "url": "GPL-LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": "1",
+        "jqueryui": "1",
+        "google maps": "3"
+    },
+    "description": "Display earthquakes and station locations on a Google Map",
+    "keywords": [
+        "earthquake",
+        "google",
+        "map",
+        "json"
+    ],
+    "homepage": "https://github.com/robnewman/jquery_plugins/jquery-recentEarthquakesGoogleMap",
+    "maintainers": [
+        {
+            "name": "Rob Newman",
+            "url": "https://github.com/robnewman"
+        }
+    ],
+    "files": [
+        "jquery.recentEarthquakesGoogleMap.js"
+    ]
+}
