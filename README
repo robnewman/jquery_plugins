@@ -1,1 +1,5 @@
 Some plugins for the jQuery javascript framework
+
+This repository follows the recommendations of the
+jQuery plugin development guidelines:
+https://github.com/jquery/plugins.jquery.com
