@@ -276,7 +276,7 @@
             $(mapDiv).data('recenteqs').refresh_rate = $(this).val();
             if($(this).val() != 'None') {
                 if($(mapDiv).data('recenteqs').refresh_var) {
-                    clearTimeout($(mapDiv).data('recenteqs').refresh_var);
+                    clearInterval($(mapDiv).data('recenteqs').refresh_var);
                 }
                 var evRefresh = setInterval(function() {
                     $.fn.recentEarthquakesGoogleMap.addEvents(map, mapDiv, metaDiv, opts);
@@ -285,7 +285,7 @@
              } else {
                 $(mapDiv).data('recenteqs').refresh_rate = false
                 if($(mapDiv).data('recenteqs').refresh_var) {
-                    clearTimeout($(mapDiv).data('recenteqs').refresh_var);
+                    clearInterval($(mapDiv).data('recenteqs').refresh_var);
                 }
              }
              $.fn.recentEarthquakesGoogleMap.setCookie(map, mapDiv);
@@ -313,7 +313,7 @@
                 $.fn.recentEarthquakesGoogleMap.setCookie(map, mapDiv);
             } else {
                 if($(mapDiv).data('recenteqs').refresh_rate == false && $(mapDiv).data('recenteqs').refresh_var) {
-                    clearTimeout($(mapDiv).data('recenteqs').refresh_var);
+                    clearInterval($(mapDiv).data('recenteqs').refresh_var);
                     $(mapDiv).data('recenteqs').refresh_var = false;
                 }
                 $.fn.recentEarthquakesGoogleMap.deleteCookie(mapDiv);
